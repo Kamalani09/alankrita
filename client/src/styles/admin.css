@@ -1,0 +1,321 @@
+.admin-layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 236px minmax(0, 1fr);
+}
+
+.admin-sidebar {
+  align-self: start;
+  position: sticky;
+  top: 0;
+  min-height: 100vh;
+  padding: 1.25rem;
+  border-right: 1px solid var(--cream-dark);
+  background: var(--white);
+}
+
+.admin-sidebar nav {
+  display: grid;
+  gap: 0.25rem;
+  margin-block: 1.75rem;
+}
+
+.admin-sidebar nav a {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  padding-inline: 0.8rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+}
+
+.admin-sidebar nav a:hover,
+.admin-sidebar nav a[aria-current="page"] {
+  background: var(--cream-dark);
+  color: var(--maroon-dark);
+  font-weight: 500;
+}
+
+.admin-main {
+  width: min(100%, var(--container));
+  margin-inline: auto;
+  padding: clamp(1rem, 4vw, 3rem);
+}
+
+.admin-login {
+  display: grid;
+  width: min(100% - 2rem, 29rem);
+  min-height: 76vh;
+  align-content: center;
+  justify-items: center;
+  gap: 1.5rem;
+  margin-inline: auto;
+}
+
+.admin-login .admin-panel {
+  display: grid;
+  width: 100%;
+  gap: 1rem;
+}
+
+.admin-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+
+.admin-layout h1, .admin-login h1 {
+  font-size: clamp(2.3rem, 5vw, 3.5rem);
+}
+
+.admin-layout h2 {
+  font-size: 1.65rem;
+}
+
+.admin-panel {
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  border: 1px solid var(--cream-dark);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-soft);
+}
+
+.admin-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: 0.8rem;
+  margin: 0;
+}
+
+.admin-metrics dd {
+  margin: 0;
+  color: var(--maroon);
+  font: 600 2.8rem/1.1 var(--font-display);
+}
+
+.admin-enquiry-summary {
+  margin-top: 1rem;
+}
+
+.admin-form, .admin-field {
+  display: grid;
+  min-width: 0;
+  gap: 1rem;
+}
+
+.admin-form fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.admin-form-grid, .admin-filter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 205px), 1fr));
+  gap: 0.9rem;
+}
+
+.admin-filter {
+  align-items: end;
+  margin-bottom: 1rem;
+}
+
+.admin-field {
+  gap: 0.25rem;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.admin-field input, .admin-field select, .admin-field textarea,
+.admin-table select, .admin-inline input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--ink-soft);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.admin-field textarea {
+  resize: vertical;
+}
+
+.admin-actions, .admin-row-actions, .admin-checks, .admin-inline, .admin-image-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.admin-inline input {
+  width: auto;
+  flex: 1 1 10rem;
+}
+
+.admin-checks label, .admin-action-link, .admin-row-actions a,
+.admin-row-actions button, .admin-inline button, .admin-checks button,
+.admin-faq button, .admin-image-actions button, .admin-error button {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+.admin-row-actions button, .admin-inline button, .admin-checks button,
+.admin-faq button, .admin-image-actions button, .admin-error button {
+  border: 0;
+  background: transparent;
+  color: var(--maroon);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.admin-actions {
+  margin-top: 0.5rem;
+}
+
+.admin-form section .button, .admin-form fieldset > .button,
+.admin-form > .button, .admin-faq button {
+  justify-self: start;
+}
+
+.admin-table-wrap {
+  overflow-x: auto;
+  padding-block: 0.5rem;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-table th, .admin-table td {
+  padding: 0.65rem;
+  border-bottom: 1px solid var(--cream-dark);
+  vertical-align: middle;
+}
+
+.admin-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.admin-table small {
+  display: block;
+  color: var(--ink-soft);
+}
+
+.admin-table select {
+  min-width: 7.5rem;
+}
+
+.admin-category-list, .admin-image-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.admin-category-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.admin-category-list li > div:first-of-type {
+  flex: 1 1 10rem;
+}
+
+.admin-category-list img, .admin-image-list img {
+  width: 4.25rem;
+  aspect-ratio: 1;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.admin-image-picker {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.admin-drop, .admin-faq, .admin-image-list li {
+  padding: 0.75rem;
+  border: 1px solid var(--cream-dark);
+  border-radius: var(--radius-sm);
+}
+
+.admin-drop, .admin-image-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.admin-drop {
+  border: 1px dashed var(--ink-soft);
+}
+
+.admin-drop.is-dragging {
+  background: var(--cream-dark);
+}
+
+.admin-image-actions {
+  gap: 0.35rem 0.8rem;
+}
+
+.admin-error {
+  color: var(--danger);
+}
+
+.admin-toast-area {
+  position: fixed;
+  z-index: 2;
+  right: 1rem;
+  bottom: 1rem;
+  max-width: min(26rem, calc(100% - 2rem));
+}
+
+.admin-toast {
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--maroon-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-hover);
+}
+
+.admin-toast.is-error {
+  background: var(--danger);
+}
+
+.admin-layout button:disabled, .admin-login button:disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+
+@media (max-width: 760px) {
+  .admin-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .admin-sidebar {
+    position: static;
+    min-height: 0;
+    padding: 0.85rem 1rem;
+    border-right: 0;
+    border-bottom: 1px solid var(--cream-dark);
+  }
+
+  .admin-sidebar nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-block: 0.5rem;
+  }
+}

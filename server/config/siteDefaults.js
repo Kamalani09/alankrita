@@ -1,0 +1,15 @@
+export const siteDefaults = {
+  announcementText: '',
+  announcementEnabled: false,
+  heroHeading: 'Premium Look, Pocket-Friendly Price',
+  heroSubtext: 'Trendy imitation jewellery for every occasion',
+  heroImage: null,
+  whatsappNumber: '918688371238',
+  instagramHandle: '@alankritaaaaaaaaaa_',
+  email: 'alankritastore1@gmail.com',
+  address: 'Nellore , Andhra Pradesh',
+  workingHours: 'Mon-Sat 10:00 AM - 8:00 PM',
+  aboutText: '',
+  faqItems: [],
+  trustStripItems: [],
+};

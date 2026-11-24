@@ -1,0 +1,92 @@
+.foundation {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-header, .site-footer {
+  padding-block: 1.25rem;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.site-footer {
+  margin-top: auto;
+  background: var(--cream-dark);
+}
+
+.brand-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--maroon);
+}
+
+.brand svg {
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: none;
+}
+
+.brand__wordmark {
+  font: 600 1.25rem/1 var(--font-display);
+  letter-spacing: 0.22em;
+}
+
+.foundation-main {
+  padding-block: clamp(3rem, 10vw, 7rem);
+}
+
+.foundation-intro {
+  max-width: 46rem;
+}
+
+.foundation-intro h1 {
+  margin-block: 0.6rem 1.25rem;
+  font-size: clamp(2.75rem, 8vw, 5.5rem);
+  text-wrap: balance;
+}
+
+.foundation-intro h1::after {
+  display: block;
+  width: 3rem;
+  height: 1px;
+  margin-top: 1.25rem;
+  background: var(--gold);
+  content: '';
+}
+
+.foundation-intro > p:last-child {
+  color: var(--ink-soft);
+  font-size: 1.125rem;
+}
+
+.health-panel {
+  width: min(100%, 28rem);
+  margin-top: 2rem;
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  background: var(--cream-dark);
+  box-shadow: var(--shadow-soft);
+}
+
+.health-panel h2 {
+  margin-bottom: 0.85rem;
+}
+
+.health-panel p:not(:empty) {
+  margin-top: 0.75rem;
+}
+
+.health-error {
+  color: var(--danger);
+}

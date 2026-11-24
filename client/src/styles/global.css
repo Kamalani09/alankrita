@@ -1,0 +1,96 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font: 400 1rem/1.6 var(--font-body);
+}
+
+h1, h2, h3 {
+  margin: 0;
+  color: var(--maroon);
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.08;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--maroon);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--maroon);
+  outline-offset: 4px;
+}
+
+.container {
+  width: min(calc(100% - 2rem), var(--container));
+  margin-inline: auto;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.3rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 250ms, color 250ms;
+}
+
+.button--primary {
+  background: var(--maroon);
+  color: var(--cream);
+}
+
+.button--primary:hover {
+  background: var(--maroon-dark);
+}
+
+.button--secondary {
+  border-color: var(--maroon);
+  background: transparent;
+  color: var(--maroon);
+}
+
+.button--secondary:hover {
+  background: var(--maroon);
+  color: var(--cream);
+}
+
+.button:disabled {
+  cursor: wait;
+}
+
+.eyebrow {
+  color: var(--gold-text);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}

@@ -1,0 +1,23 @@
+:root {
+  --maroon: #7A1E3A;
+  --maroon-dark: #5C142B;
+  --gold: #B8893A;
+  --gold-text: #8A6420;
+  --gold-light: #E2B766;
+  --cream: #FBF5EA;
+  --cream-dark: #F3E9D6;
+  --ink: #2B1B1F;
+  --ink-soft: #5A4A42;
+  --white: #FFFFFF;
+  --success: #2E7D4F;
+  --danger: #B3261E;
+  --whatsapp: #25D366;
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Jost', sans-serif;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --shadow-soft: 0 4px 18px rgba(122, 30, 58, 0.08);
+  --shadow-hover: 0 10px 28px rgba(122, 30, 58, 0.16);
+  --container: 1200px;
+}

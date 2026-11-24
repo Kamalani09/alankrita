@@ -1,0 +1,25 @@
+{
+  "name": "@alankrita/server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --watch server.js",
+    "start": "node --env-file-if-exists=.env server.js",
+    "seed:admin": "node --env-file-if-exists=.env seed/createAdmin.js",
+    "seed:demo": "node seed/createSampleCatalogue.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^2.11.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.7.5",
+    "express-validator": "^7.3.2",
+    "file-type": "^22.3.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.0.0",
+    "multer": "^2.5.0"
+  }
+}
